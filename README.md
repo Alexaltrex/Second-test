@@ -1,8 +1,8 @@
 # Max-Patzinsky-second-test
-Ссылка: https://alexaltrex.github.io/Max-Patzinsky-second-test
+Ссылка: https://alexaltrex.github.io/Second-test
 
 ## Описание
-Второе тестовое задание Максима Пацианского (https://github.com/maxfarseer/tz-webinars/tree/tz-2-react-redux-router-async). 
+Второе тестовое задание Максима Пацианского (https://github.com/maxfarseer/tz-webinars/tree/tz-2-react-redux-router-async). Прототип социальной сети: логинизация, загрузка и вывод массива новостей с сервера. 
 
 ## Запуск проекта:
 Для установки и запуска необходимы установленные программы: Node.js, npm, Git;
