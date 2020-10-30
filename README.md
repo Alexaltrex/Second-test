@@ -1,4 +1,4 @@
-# Max-Patzinsky-second-test
+# Second-test
 Ссылка: https://alexaltrex.github.io/Second-test
 
 ## Описание
@@ -6,8 +6,8 @@
 
 ## Запуск проекта:
 Для установки и запуска необходимы установленные программы: Node.js, npm, Git;
-1. Клонирование и запуск: git clone https://github.com/Alexaltrex/Max-Patzinsky-second-test.git;
-2. Переход в директорию с проектом: cd Max-Patzinsky-second-test;
+1. Клонирование и запуск: git clone https://github.com/Alexaltrex/Second-test.git;
+2. Переход в директорию с проектом: cd Second-test;
 3. Установка зависимостей: npm install;
 4. Запуск проекта в режиме разработки: npm start;
 5. Перейти в браузер и открыть страницу: http://localhost:3000.
