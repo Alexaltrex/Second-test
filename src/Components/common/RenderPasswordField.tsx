@@ -21,7 +21,8 @@ const useStyles = makeStyles({
         transform: 'translate(-100%, -50%)'
     },
     textField: {
-        width: 300
+        width: 300,
+        marginBottom: 20
     },
     error: {
         paddingLeft: 14,

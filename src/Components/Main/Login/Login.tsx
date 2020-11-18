@@ -27,16 +27,14 @@ const useStyles = makeStyles({
         width: 300,
         marginBottom: 10,
     },
-    textField: {
-        marginBottom: 20,
-        width: 300
-
-    },
     button: {
         marginBottom: 10,
         width: 300,
     },
     title: {
+        marginBottom: 20
+    },
+    fieldWrapper: {
         marginBottom: 20
     }
 });
@@ -60,7 +58,6 @@ const LoginForm: React.FC<InjectedFormProps<LoginFormValuesType, OwnPropsType> &
 
                     <div>
                         <Field
-                            className={classes.textField}
                             disabled={isLoading}
                             name='email'
                             component={RenderTextField}
@@ -74,23 +71,18 @@ const LoginForm: React.FC<InjectedFormProps<LoginFormValuesType, OwnPropsType> &
                         <Field
                             name='password'
                             disabled={isLoading}
-                            className={classes.textField}
                             component={RenderPasswordField}
                             placeholder='Введите свой пароль'
                             label='Пароль (12345)'
                         />
                     </div>
 
-                    {error && !pristine &&
-                    <Typography color='error' variant='h6'>
-                        {error}
-                    </Typography>}
-
-
-                    <Typography color='error' variant='subtitle1' className={classes.error}>
-                        {error}
-                    </Typography>
-
+                    {
+                        error &&
+                        <Typography color='error' variant='subtitle1' className={classes.error}>
+                            {error}
+                        </Typography>
+                    }
 
                     <div>
                         <Button type="submit"
@@ -145,7 +137,7 @@ const Login: React.FC<LoginPropsType> = (props) => {
             <LoginReduxForm onSubmit={onSubmit} isLoading={isLoading}/>
             {isLoading && <Preloader/>}
         </>
-        )
+    )
 
 };
 

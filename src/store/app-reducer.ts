@@ -2,7 +2,7 @@ import {GetActionsType} from "./store";
 
 
 let initialState = {
-    open: false,
+    open: true,
     isLoading: false,
     isLanError: false
 };

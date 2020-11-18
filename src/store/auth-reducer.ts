@@ -77,7 +77,6 @@ export const login = (email: string, password: string):ThunkType => async (dispa
     try {
         dispatch(appAC.toggleLoading(true));
         let data = await authAPI.login(email, password);
-        dispatch(appAC.toggleLoading(false));
         dispatch(appAC.setIsLanError(false));
         dispatch(authAC.setLoginStatus(data.status));
         if (data.status === 'ok') {
@@ -91,6 +90,7 @@ export const login = (email: string, password: string):ThunkType => async (dispa
         }
     } catch (e) {
         dispatch(appAC.setIsLanError(true));
+    } finally {
         dispatch(appAC.toggleLoading(false));
     }
 };
@@ -111,6 +111,7 @@ export const getUserInfo = (userId: number): ThunkType => async (dispatch) => {
         }
     } catch (e) {
         dispatch(appAC.setIsLanError(true));
+    } finally {
         dispatch(appAC.toggleLoading(false));
     }
 }
